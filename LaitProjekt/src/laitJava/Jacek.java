@@ -1,90 +1,148 @@
+
 package laitJava;
 
 import java.util.Scanner;
 
 public class Jacek {
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//cwiczeniezFarenhaita();
+     liczenie2liczb();
+      }
+	
+	static void liczenie2liczb() {
+		int liczba1, liczba2;
+		System.out.println("podaj pierwsza liczbe");
+		liczba1 = Integer.parseInt(wczytywaniezKonsoli());
+		System.out.println("podaj druga liczbe");
+		liczba2 = Integer.parseInt(wczytywaniezKonsoli());
+		
+		if (liczba1>liczba2) {
+			System.out.println("najwiêksza liczba to: " + liczba1);
+			System.out.println("najmniejsza liczba to: " + liczba2);
+		}
+		else {
+			System.out.println("najwiêksza liczba to: " + liczba2);
+			System.out.println("najmniejsza liczba to: " + liczba1);
+		}
+		
+		
+	}
 	
 	
-	static void Farenhaita() {
-		double f;
+	static void cwiczeniezFarenhaita() {
+		
+		double F ;
+		
+		System.out.println ( "Podaj temperature z stopniach Celsjusza ");
+		int liczba;
 		String zkonsoli = wczytywaniezKonsoli();
-		Integer licz = 0;
-		int liczba = licz.parseInt(zkonsoli);
-		f = (1.8 * liczba)+ 32;
-		System.out.println("temperatura farenhajta" + f );
+		Integer licz = 0; 
+		liczba = licz.parseInt(zkonsoli) ;
+		F = (1.8 * liczba) + 32 ;
+		System.out.println ( "Temperatura w stopniach Fahrenhaita " + F);
 		
 		
 		
 	}
 	
-	public static void main(String[] args) {
-		String text = wczytywaniezKonsoli();
-		System.out.println(text);
-		Integer liczbaKonsoli = 0;
-		text = wczytywaniezKonsoli();
-		int liczba = liczbaKonsoli.parseInt(text);
-		System.out.println(liczba + 5);
-		}
-	
-	static String wczytywaniezKonsoli() {
+     static String wczytywaniezKonsoli() {
 		String text;
 		Scanner odczyt = new Scanner(System.in);
 		text = odczyt.nextLine();
-		System.out.println(text);
-		return text;
+		 System.out.println( text);
+	//	 odczyt.close();
+		 return text;
 	}
-
 	
+     
+     static void cwiczeniezWczytywania () {
+    	 String text = wczytywaniezKonsoli();
+    		System.out.println(text);
+    	     Integer liczbazKonsoli = 0 ;
+    	     text = wczytywaniezKonsoli();
+    	     int liczba = liczbazKonsoli.parseInt(text);
+    	     System.out.println( liczba + 5); 
+    	 
+     }
 	
-	
-	void mojaMetodazmienne () {
-		int zmiennaInt = 1;
-		int zmiennaInt2 = 3;
-		System.out.println(zmiennaInt + zmiennaInt2);
-		System.out.println(zmiennaInt / zmiennaInt2);
-		System.out.println(zmiennaInt * zmiennaInt2);
-		System.out.println(zmiennaInt - zmiennaInt2);
-		System.out.println(zmiennaInt % zmiennaInt2);
-		String string = "napis jakiœ";
-		double zmiennoPrzecinkowa = 3.0;
-		boolean prawdaFalsz = false;
-
-		if (prawdaFalsz) {
-			System.out.println("jestem w ifie" + zmiennaInt);
-		}
-
-		if (true) {
-			System.out.println("jestem w ifie" + zmiennaInt);
-			zmiennaInt++;
-		}
-		if (2 >= 5) {
-			System.out.println("jestem w ifie");
-		} else {
-			System.out.println("jestem w elsie");
-		}
-	}
-	void mojaObliczenia () {
-		String napis = "napis";
-		if (napis.equals("napis")) {
-			System.out.println("if z napisem");
-
-		}
-		double a = 3.0, b = 4.5, c = 6.5;
-		System.out.println("(a+b)*c = " + (a + b) * c);
-		System.out.println("(a-b)/c = " + (a - b) / c);
-		a++;
-		b++;
-		c++;
-		if ((a + b) > c) {
-			System.out.println("a+b jest wiêksze od c");
-		}
-		if (a == b) {
-			System.out.println("a jest równe b");
-		} else {
-			System.out.println("a nie jest równe b");
-		}
+		void mojaMetodaZmienna() {
 		
+		 int zmienna1 = 1;
+		 int zmienna2 = 3;
+		 System.out.println(zmienna1 + zmienna2);
+		 System.out.println(zmienna1 / zmienna2);
+		 System.out.println(zmienna1 * zmienna2);
+		 System.out.println(zmienna1 - zmienna2);
+		 System.out.println(zmienna1 % zmienna2);
+		 
+		 String string = "to jest napis ";
+		 char aaaaa = 'a';
+		 double zmienna3 = 3.0;
+		 boolean prawdaFalsz = false;
+		 
+		 if ( prawdaFalsz ) {
+			 System.out.println( " jestem w ifie" + zmienna1 );
+			 zmienna1++;
+		 }
+			 
+		 
+		 
+		if ( 5 == 5 ) {
+			 System.out.println( " jestem w ifie" + zmienna1 );
+			 zmienna1++;
+		 }
+		 
+		if ( 5 < 5 ) {
+			 System.out.println( " jestem w ifie" + zmienna1 );
+			 zmienna1++; 
+		}
 
+		if ( 5 > 5 ) {
+			 System.out.println( " jestem w ifie" + zmienna1 );
+			 zmienna1++;
+		}
+		if ( 5 >= 5 ) {
+			 System.out.println( " jestem w ifie" + zmienna1 );
+			 zmienna1++;
+		}
+
+		if ( 5 <= 5 ) {
+			 System.out.println( " jestem w ifie" + zmienna1 );
+			 zmienna1++;
+		}
+		 
+		if ( 2!= 5  ) {
+			 System.out.println( " jestem w ifie" + zmienna1 );
+			 zmienna1++;
+		}
+
+		
 	}
-}
+	
+	void cwiczeniezLiczenia () {
+		  double a=1.1 , b=2.2 , c=3.3 ;
+		  System.out.println( (a+b)*c );
+		  System.out.println( a-b/c );
+		  
+		  a=a++ ;b=b++;c=c++;
+		  
+		  if ( (a+b) > c ) {
+				 System.out.println( "1. to jest prawda : a+b >c " );
+				 
+			 }
+			 
+			if ( a==b ) {
+				 System.out.println( "2. a rowna sie b "  );
+				  }
+			else  
+			    {   
+				 System.out.println( "2. a nie rowna sie b " );  
+			    } 
+	}
+
+	
+	
+	
+	}
