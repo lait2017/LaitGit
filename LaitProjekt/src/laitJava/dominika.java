@@ -7,7 +7,9 @@ public class dominika {
 		
 		
 //cwiczeniezFarenhaita();
-		cwiczeniezFarenhaita();
+		//cwiczeniezFarenhaita();
+		 //cwiczeniedwieLiczby();
+  		cwiczeniedwieLiczby();
 		
 		
 	}
@@ -18,7 +20,27 @@ public class dominika {
 	    liczba = licz.parseInt(zkonsoli);
 	    System.out.println(1.8*liczba+32.0);
 		
+	    
+	 
+	}
 	
+	static void cwiczeniedwieLiczby() {
+	  		String zkonsoli= wczytywaniezKonsoli(); 
+	  		int a; 
+	        Integer licz=0;
+	  		a = licz.parseInt(zkonsoli);
+	  		 
+	  		String zkonsoli2=wczytywaniezKonsoli();
+	  		int b;
+	  		Integer licz1=0;
+	  		b = licz1.parseInt(zkonsoli2);
+	  		
+	  		if (a>b) {
+	  			System.out.println(+a +"najwieksze");
+	  		} else {System.out.println(+b +"najwieksze");
+	  			
+	  		}
+	 
 		}
 	 static String wczytywaniezKonsoli() {
 	 String text;
