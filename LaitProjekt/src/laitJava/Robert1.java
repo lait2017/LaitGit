@@ -15,11 +15,18 @@ static void cwiczeniezFarenheita() {
 // Napisaæ program do konwersji wartoœci temp w celsjuszach na farenheity
 // Farenheit = 1.8 * Celsjusz + 32.0
 	
-String zkonsoli = wczytywaniezKonsoli();
-System.out.println(zkonsoli() + "stopni Celsjusza to" + 1.8 * Integer.parseInt(zkonsoli() + 32 + "Stopni Farenheita"));
-//int liczba;
-//Integer licz = 0;
-//liczba = licz.parseInt(zkonsoli);
+	
+	
+String zKonsoli = wczytywaniezKonsoli();
+int liczba;
+Integer liczbaDoKonwersji = 0;
+liczba = liczbaDoKonwersji.parseInt(zKonsoli);
+double Farenheit = 1.8 *liczba + 32;
+//System.out.println(zKonsoli + " Celsjusza to Farenheita " + );
+System.out.println(zKonsoli );
+
+//System.out.println(zkonsoli() + "stopni Celsjusza to" + (1.8 * Integer.parseInt(zkonsoli() + 32) + "Stopni Farenheita"));
+
 
 
 //int liczba2 = Integer.parseInt(wczytywaniezKonsoli());
