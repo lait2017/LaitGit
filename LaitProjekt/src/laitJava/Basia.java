@@ -55,7 +55,7 @@ public class Basia {
 		System.out.println(pierwszaInt - drugaInt);
 		System.out.println(pierwszaInt % drugaInt);
 
-		String ci¹giZnaków = "napis123";
+		String ciagiZnakow = "napis123";
 		char g = 'g';
 		double zmiennoPrzecinkowa = 3.0;
 		if (2 != 5) {
