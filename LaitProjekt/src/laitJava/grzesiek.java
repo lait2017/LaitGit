@@ -4,13 +4,31 @@ import java.util.Scanner;
 
 public class grzesiek {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
 	        //  System.out.println(text + ((a+b)>c) );
-	//	 cwiczeniezFarenhaita();
-     trzyliczby();
+		 cwiczeniezFarenhaita();
+     //trzyliczby();
+int i = 10;
+while ( i >  0 ) {
+	System.out.println ("while " + i);
+	i--;
+}
      
+int j;
+for ( j=10 ; j > 0 ; j-- ) 
+{
+	System.out.println ("for"+j);
+}
+
+int k=10;
+do {
+	Thread.sleep(1000);
+	System.out.println ("do while "  +k);
+	k--;
+} while (k > 0) ;
+
       }
 	
 	static void trzyliczby() {
@@ -45,7 +63,10 @@ public class grzesiek {
 	static void cwiczeniezFarenhaita() {
 		
 		double F ;
-		
+		int ii;
+		for ( ii=1 ; ii < 11 ; ii++) {
+			System.out.println ( "to jest " + ii + "  uruchomienie fahre.....") ;
+			System.out.println (" =========================================" );
 		System.out.println ( "Podaj temperature z stopniach Celsjusza ");
 		int liczba;
 		String zkonsoli = wczytywaniezKonsoli();
@@ -55,7 +76,7 @@ public class grzesiek {
 		System.out.println ( "Temperatura w stopniach Fahrenhaita " + F);
 		
 		
-		
+		}
 	}
 	
      static String wczytywaniezKonsoli() {
