@@ -6,9 +6,36 @@ public class Basia {
 
 	public static void main(String[] args) {
 //cwiczeniazWczytywania();
-		cwiczeniezFarenheita();
+		cwiczeniazInstrukcjami();
 
 	}
+	static void cwiczeniazInstrukcjami() 
+	{
+	int liczba1; int liczba2; 
+	
+	Integer liczba= 0; 
+	System.out.println("Podaj pierwsz¹ liczbê:");
+	liczba1  = Integer.parseInt(wczytywaniezKonsoli());
+	System.out.println("Podaj drug¹ liczbê");
+	liczba2 = Integer.parseInt(wczytywaniezKonsoli());
+	
+
+	
+	if (liczba1>liczba2) 
+		{
+	 		System.out.println("Najwiêksza liczba to:"+  liczba1  );
+	 		System.out.println("najmniejsza liczba to:" + liczba2);
+		}
+	else
+		{
+		System.out.println("To jest najmniejsza liczba: " + liczba1);
+		System.out.println("Najwiêksza liczba to: "+ liczba2);
+		}
+	
+	}
+	
+	
+	
 	
 	static void cwiczeniezFarenheita() 
 	{
@@ -19,7 +46,7 @@ public class Basia {
 		String zkonsoli=wczytywaniezKonsoli();
 		int liczba;
 		Integer licz = 0;
-		liczba  = licz.parseInt(zkonsoli);
+		liczba  = Integer.parseInt(zkonsoli);
 		F=(1.8*liczba)+32;
 		System.out.println("Temperatura po przeliczeniu: "+ F);
 		
