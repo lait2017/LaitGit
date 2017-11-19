@@ -2,10 +2,13 @@ package laitJava;
 
 import java.util.Scanner;
 
+<<<<<<< HEAD
 import javax.swing.JOptionPane;
 
 import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 
+=======
+>>>>>>> origin/master
 public class Robert1 {
 
 	public static void main(String[] args) {
