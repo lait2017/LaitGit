@@ -2,8 +2,6 @@ package laitJava;
 
 import java.util.Scanner;
 
-import com.sun.java.swing.plaf.motif.resources.motif_ja;
-
 public class RobertLajt {
 
 	public static void main(String[] args) {
