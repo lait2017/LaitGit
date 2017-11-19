@@ -12,7 +12,87 @@ public class Robert1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
+// Odliczanie od 10 do 0 PÊTLA
+		
+// Dow pêtla i zrob program z celsjusza i fahrenheita 10 powt
+		
+		
+	for (int i=0; i < 10; i++) {
+			cwieczeniezFarehaita();
+		}
 	
+	/*	
+int key = Integer.parseInt(wczytywaniezKonsoli());
+switch (key) {
+case 1:
+System.out.println("To jest opcja 1");
+break;
+case 2:
+System.out.println("To jest opcja 2");
+break;
+case 3:
+System.out.println("To jest opcja 3");
+break;
+case 4:
+System.out.println("To jest opcja 4");
+break;
+default:
+System.out.println("To jest opcja default");
+}
+	 */
+/* Napisz program króty pobierze imie i przechowa je w zmiennej
+ * Stwórz kilka warunków z róznymi imionami
+ * Jesli któreœ z imion bêdzie psaowa³o wyœwietl "Czeœæ jak masz na imie"
+ * Gdy nie znajdzie to "Przykro mi nie znam cie"
+ */
+
+//String F = "text";
+//System.out.println(F.equals(anObject));
+/*
+		String key = wczytywaniezKonsoli();
+		switch (key) {
+		case 1:
+		System.out.println("To jest opcja 1");
+		break;
+		case 2:
+		System.out.println("To jest opcja 2");
+		break;
+		case 3:
+		System.out.println("To jest opcja 3");
+		break;
+		case 4:
+		System.out.println("To jest opcja 4");
+		break;
+		default:
+		System.out.println("To jest opcja default");
+
+*/
+		/*
+________________________________________________________________________________________
+WHIILE
+int i = 0;
+while (i<10) {
+	System.out.println(i);
+	i++;
+}
+________________________________________________________________________________________
+		FOR
+System.out.println("Teraz for");
+for (int i = 10; i < 0; i--) {
+	System.out.println(i);
+}
+*/
+/*	
+ __________________________________________________________________________________
+ DO WHILE
+ 
+ i=10;
+do {
+	System.out.println("Teraz do while");
+	i++;
+} while (i < 10);
+	____________________________________________________________________________	
+*/
 	/* Wczytaæ od u¿ytkownika 3 liczby ca³kowite i wypisaæ na ekran najwiêksz¹
 	 * oraz najmniejsz¹ z nich
 	 */
@@ -42,7 +122,7 @@ public class Robert1 {
 		if (c < smallest) {
 			smallest = c;
 		}
-		System.out.println("Najmniejsza: " + largest);
+		System.out.println("Najmniejsza: " + smallest);
 		
 /*        String a = JOptionPane.showInputDialog("Podaj pierwsz¹ liczbê ca³kowit¹: ");
         String b = JOptionPane.showInputDialog("Podaj drug¹ liczbê ca³kowit¹: ");
@@ -80,11 +160,9 @@ public class Robert1 {
 		}
 		System.out.println("Najmniejsza: " + largest1);
 		
+	}
+				
 		
-		
-				// czwiczeniezWcytywania();
-		cwieczeniezFarehaita();
-			}
 
 			static void cwieczeniezFarehaita() {
 				/*
@@ -179,6 +257,8 @@ public class Robert1 {
 					System.out.println("jestem w ifie z napisem");
 				}
 			}
+			
+
 
 			static void cwiczeniezLiczenia() {
 				// 1.3 Napisz prosty kalkulator,
