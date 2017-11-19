@@ -12,6 +12,37 @@ public class RobertLajt {
 cwieczeniezFarehaita();
 	}
 
+	static void cwiczenie3Liczby(){
+		
+		int a = Integer.parseInt(wczytywaniezKonsoli());
+		int b = Integer.parseInt(wczytywaniezKonsoli());
+		int c = Integer.parseInt(wczytywaniezKonsoli());
+		int largest;
+		int smallest;
+		if (a > b) { 
+			largest = a;
+		} else {
+			largest = b;
+		}
+ 
+		if (c > largest) { 
+			largest = c;
+		}
+ 
+		System.out.println("Najwiêksza: " + largest);
+ 
+		if (a < b) {
+			smallest = a;
+		} else {
+			smallest = b;
+		}
+ 
+		if (c < smallest) {
+			smallest = c;
+		}
+	
+	}
+	
 	static void cwieczeniezFarehaita() {
 		/*
 		 * Napisaæ program s³u¿¹cy do konwersji wartoœci temperatury podanej w stopniach
