@@ -6,9 +6,55 @@ public class Basia {
 
 	public static void main(String[] args) {
 //cwiczeniazWczytywania();
-		cwiczeniazInstrukcjami();
-
+		//cwiczeniazInstrukcjami();
+		//cwiczeniezFarenheita();
+		for(int i=0; i<10; i++ ) {cwiczeniezFarenheita();
+		}
+	
+    int i=0;
+    while (i<10) 
+	{
+		System.out.println(i);
+	i++;
 	}
+	for(int j=0; j<10; j++) 
+	{
+	System.out.println(j);	
+	}
+	
+	i=0;
+	do 
+	{
+	System.out.println("teraz do while");
+	i++;
+	} while (i<10);
+	
+	
+	
+	//zadanie z pêtlami
+	System.out.println("na pocz¹tek pêtla for: ");
+	for(int k=10; k>0; k--) {
+		System.out.println("bomba wybuchnie za "+ k);
+	}
+	System.out.println("Nastêpnie pêtla do, while: ");
+	int l;
+	l=10;
+	do {
+		System.out.println("Bomba wybychnie za: " + l);
+		l--;}
+	while (l>0);
+	
+	System.out.println("I na koniec while: ");
+	int n=10;
+	while(n>0) {
+		System.out.println("Bomba wybuchnie za:" + n);
+		n--;
+	}
+
+	
+}	
+	
+	
 	static void cwiczeniazInstrukcjami() 
 	{
 	int liczba1; int liczba2; 
@@ -42,6 +88,7 @@ public class Basia {
 		//Celsjusze na F; Fahrenheit = 1.8* stopnie Celsjusza+ 32.00
 		
 		double F;
+		
 		System.out.println("Podaj temeperaturê w Celsjuszach");
 		String zkonsoli=wczytywaniezKonsoli();
 		int liczba;
@@ -50,11 +97,11 @@ public class Basia {
 		F=(1.8*liczba)+32;
 		System.out.println("Temperatura po przeliczeniu: "+ F);
 		
+	
+		
+}
 		
 		
-		
-		
-	}
 
 	static String wczytywaniezKonsoli() {
 		String text;
