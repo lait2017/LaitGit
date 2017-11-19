@@ -8,9 +8,39 @@ public class grzesiek {
 		// TODO Auto-generated method stub
 
 	        //  System.out.println(text + ((a+b)>c) );
-		 cwiczeniezFarenhaita();
+	//	 cwiczeniezFarenhaita();
+     trzyliczby();
      
       }
+	
+	static void trzyliczby() {
+		int licz1, licz2,licz3 , maxlicz=0;
+	    Integer licz;
+		
+		
+		System.out.println ( "Podaj pierwsza liczbe: ");
+		licz1 = Integer.parseInt(wczytywaniezKonsoli());
+		System.out.println ( "Podaj druga liczbe: ");
+		licz2 =Integer.parseInt(wczytywaniezKonsoli());
+		System.out.println ( "Podaj trzecia liczbe: ");
+		licz3 = Integer.parseInt(wczytywaniezKonsoli());
+		
+		if  ( licz1 >= licz2  &&  licz1 >= licz3 ) 
+		{
+			maxlicz =licz1;
+			}
+		if  ( licz2 >= licz1  &&  licz2 >= licz3 ) 
+		{ 
+			maxlicz =licz2;
+			}
+		if  ( licz3 >= licz1  &&  licz3 >= licz2 ) 
+		{ 
+			maxlicz =licz3;
+			}
+		System.out.println ( "Najwieksza liczba to: " +  maxlicz);
+		
+	}
+	
 	
 	static void cwiczeniezFarenhaita() {
 		
