@@ -6,10 +6,28 @@ public class Tomasz {
 
 	public static void main(String[] args) {
 
-		cwiczeniezFarehaita();
-		
+		liczby31(); 
 		
 	}
+static void liczby31() {
+	String zkonsoli = wczytywaniezKonsoli();
+	int liczba;
+	Integer licz = 0;
+	String zkonsoli1 = wczytywaniezKonsoli();
+	Integer licz1 = 0;
+	int liczba1;	
+	liczba = licz.parseInt(zkonsoli);
+	liczba1 = licz1.parseInt(zkonsoli1);
+	if (liczba < liczba1) {
+System.out.println("Liczba " + liczba1 + " jest wiêksza ni¿ " + liczba);}
+	
+else {
+	System.out.println("Liczba " + liczba + " jest wiêksza ni¿ " + liczba1);
+	}
+		
+		}
+		
+	
 
 	static void cwiczeniezFarehaita() {
 String zkonsoli = wczytywaniezKonsoli();
@@ -102,6 +120,12 @@ System.out.print("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczba 
 		c++;
 
 		System.out.println("Czy a+b>c? " + ((a + b) > c));
-		System.out.println(a == b);
+		System.out.println(a == b); 
 	}
+
+
+private static String wczytywaniezKonsoli() {
+	// TODO Auto-generated method stub
+	return null;
+}
 }
