@@ -6,15 +6,45 @@ public class Monika {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		String text = wczytywaniezKonsoli();
-		System.out.println(text);
-		Integer liczbazKonsoli=0;
-		text =wczytywaniezKonsoli();
-		int liczba= liczbazKonsoli.parseInt(text);
-		System.out.println(liczba+5);
+		
+		cwiczenie3Liczby();
+		cwiczeniezFarenheita();
+		wczytywaniezKonsoli();
 	
 
+	}
+	
+static void cwiczenie3Liczby(){
+		
+		int a = Integer.parseInt(wczytywaniezKonsoli());
+		int b = Integer.parseInt(wczytywaniezKonsoli());
+		int c = Integer.parseInt(wczytywaniezKonsoli());
+		int largest;
+		int smallest;
+		if (a > b) { 
+			largest = a;
+		} else {
+			largest = b;
+		}
+ 
+		if (c > largest) { 
+			largest = c;
+		}
+ 
+		System.out.println("Najwieksza: " + largest);
+ 
+		if (a < b) {
+			smallest = a;
+		} else {
+			smallest = b;
+		}
+ 
+		if (c < smallest) {
+			smallest = c;
+		}
+		System.out.println("Najmniejsza: " + smallest);
+		
+		
 	}
 	
 	static String wczytywaniezKonsoli() {
