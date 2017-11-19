@@ -7,11 +7,60 @@ public class Monika {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		cwiczenie3Liczby();
-		cwiczeniezFarenheita();
-		wczytywaniezKonsoli();
+		//cwiczenie3Liczby();
+		//cwiczeniezFarenheita();
+		//wczytywaniezKonsoli();
+		
+//		int k=10;			
+//	for (k = 10; k >= 0; k--) {
+// System.out.println("odliczanie..." + k);
+		
+//		}
 	
-
+	
+	int m=10;
+	System.out.println("odliczanie" + m);
+			while (m<0) {
+					m++;
+			}		
+	
+	//	int i=0;
+	//	System.out.println("teraz while");
+	//			while (i<10) {
+	//				System.out.println(i);
+	//				i++;
+//								}
+//				System.out.println("teraz for");			
+//			for (int j = 10; j < 10; j++) {
+//					System.out.println(j);
+//				}
+	//i=0;
+//	do {
+//		System.out.println("teraz do while");
+//		i++;
+//	} while (i<10);
+				
+				
+	int key=Integer.parseInt(wczytywaniezKonsoli());
+	
+	switch (key) {
+	case 1:
+		System.out.println("to jest opcja 1");
+		break;
+		
+	case 2:
+		System.out.println("to jest opcja 2");
+		break;
+	case 3:
+		System.out.println("to jest opcja 3");
+		break;
+	case 4:
+		System.out.println("to jest opcja 4");
+		break;
+	default:
+		System.out.println("to jest opcja default");
+		break;
+	}
 	}
 	
 static void cwiczenie3Liczby(){
