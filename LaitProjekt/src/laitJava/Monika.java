@@ -20,7 +20,7 @@ public class Monika {
 	
 	int m=10;
 	System.out.println("odliczanie" + m);
-			while (m<0) {
+			while (k<0) {
 					m++;
 			}		
 	
