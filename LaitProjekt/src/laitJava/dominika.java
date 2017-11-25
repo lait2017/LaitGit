@@ -3,15 +3,55 @@ package laitJava;
 import java.util.Scanner;
 
 public class dominika {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		
 //cwiczeniezFarenhaita();
 		//cwiczeniezFarenhaita();
 		 //cwiczeniedwieLiczby();
-  		cwiczeniedwieLiczby();
+  		//cwiczeniedwieLiczby();
+  		
+  		int i =10;
+  		System.out.println("teraz while");
+  		while (i<10) {
+  			System.out.println(i);
+  			i++;
+  		}
+  		System.out.println("teraz for");
+  	for (int j= 0; j<10; j++) {
+  		System.out.println(j);
+  	}
+  	i=0;
 		
+  do {
+		System.out.println("teraz do while");
+		i++;
+  } while (i<10); 
+  
+  //Odliczanie ();
+  int k =10;
+	System.out.println("Odliczanie");
+	while (k>0) {
 		
+		k--;
+		Thread.sleep (1000);
+		System.out.println("bomba wybuchnie za " +k);
+	}
+	
+	  //Przeliczaniestopni ();
+	  int m =10;
+		System.out.println("przeliczanie stopni");
+		while (m>0) {
+			
+			m--;
+			
+			cwiczeniezFarenhaita();
+		
+		}
+
+
+	
+
 	}
 	static void cwiczeniezFarenhaita() {
 		String zkonsoli= wczytywaniezKonsoli(); 
@@ -121,9 +161,6 @@ void cwiczeniecwiczenia() {
 
 }
 
-
-	
-	
 		
 }
 
