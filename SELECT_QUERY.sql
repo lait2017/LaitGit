@@ -109,3 +109,37 @@ SELECT COUNT (EMPLOYEE_ID) AS LICZBA_PRACOWNIKOW FROM EMPLOYEES WHERE SALARY>100
 
 SELECT ROUND(AVG(SALARY),2) AS SREDNIE_ZAROBKI FROM EMPLOYEES WHERE HIRE_DATE BETWEEN '04/11/04' AND '07/11/04'; 
 SELECT SUM(MAX_SALARY) FROM JOBS WHERE JOB_ID LIKE 'AD%'; 
+
+--WYSWIETL NAZWY KRAJOW I REGIONOW
+SELECT C.COUNTRY_NAME, R.REGION_NAME FROM COUNTRIES C INNER JOIN REGIONS R ON C.REGION_ID=R.REGION_ID;
+
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WW',1);
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WX',1);
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WV',1);
+
+SELECT C.COUNTRY_NAME, R.REGION_NAME FROM COUNTRIES C LEFT JOIN REGIONS R ON C.REGION_ID=R.REGION_ID;
+
+select d.department_name, e.first_name, e.last_name 
+from departments d join employees e
+on d.manager_id = e.employee_id
+order by 1;
+
+
+select e.first_name, e.last_name, d.department_name, d.manager_id, d.department_id
+from employees e right join departments d 
+on e.EMPLOYEE_ID = d.manager_id;
+
+
+select e.EMPLOYEE_ID,e.FIRST_NAME,
+e.LAST_NAME, d.department_id, 
+d.department_name, d.manager_id
+from departments d
+inner join employees e
+on e.DEPARTMENT_ID = d.DEPARTMENT_ID
+where d.manager_id is not null; 
+
+
+
