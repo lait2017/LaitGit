@@ -8,9 +8,10 @@ public class Robert7 {
 		//wartoœci x zmieniaj¹cych siê od 0 do 10 oblicza wartoœæ
 		//funkcji y = 3x.
 		
-		int x;
-		while (x=0) {
-			
+		int x = 0;
+		while (x<=10) {
+			System.out.println(3*x);
+			x++;
 		}
 	}
 
