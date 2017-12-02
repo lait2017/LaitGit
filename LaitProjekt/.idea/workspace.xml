@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710558f0-8c8d-41f0-b83d-80cc1a08319e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/Basia.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/Jacek.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/Monika.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/Ola.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/Robert1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/RobertLajt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/RobertLajt1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/Tomasz.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/dominika.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/grzesiek.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/jv.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/tomek.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaitProjekt.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/osbaza.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LaitProjekt/laitJava/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/laitJava/Robert2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/laitJava/RobertLajt1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SELECT_QUERY.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../basiaConnection.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../baza.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pliki/SELECT_QUERY.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pliki/polaczeniegn.sql" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../pliki/dominika2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../pliki/dominika3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../pliki/dominika4" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/laitJava/Basia.java" afterPath="$PROJECT_DIR$/src/laitJava/Basia.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/laitJava/Jacek.java" afterPath="$PROJECT_DIR$/src/laitJava/Jacek.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/laitJava/Monika.java" afterPath="$PROJECT_DIR$/src/laitJava/Monika.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/laitJava/Ola.java" afterPath="$PROJECT_DIR$/src/laitJava/Ola.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/laitJava/RobertLajt.java" afterPath="$PROJECT_DIR$/src/laitJava/RobertLajt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/laitJava/Tomasz.java" afterPath="$PROJECT_DIR$/src/laitJava/Tomasz.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/laitJava/dominika.java" afterPath="$PROJECT_DIR$/src/laitJava/dominika.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/laitJava/grzesiek.java" afterPath="$PROJECT_DIR$/src/laitJava/grzesiek.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pliki/dom_5" afterPath="$PROJECT_DIR$/../pliki/dom_5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pliki/plik3" afterPath="$PROJECT_DIR$/../pliki/plik3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pliki/plik4" afterPath="$PROJECT_DIR$/../pliki/plik4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pliki/plik5" afterPath="$PROJECT_DIR$/../pliki/plik5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selectqueriessql2.sql" afterPath="$PROJECT_DIR$/../selectqueriessql2.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Robert1paczka/Robert12.java" afterPath="$PROJECT_DIR$/src/Robert1paczka/Robert12.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-161" />
     <option name="y" value="-25" />
     <option name="width" value="1400" />
@@ -273,8 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

@@ -14,7 +14,7 @@ public class Robert11 {
 		 
 		 
 		 for (int i = 0; i <= a; i++) {
-				System.out.println(i);
+				System.out.print(i);
 		if (i%2 == 1 || i == 0) {
 			System.out.println(" <---- Liczba Nieparzysta");
 		} else {
