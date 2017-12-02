@@ -227,7 +227,7 @@ ORDER BY 3;
 
 SELECT E.FIRST_NAME, E.LAST_NAME, E.EMPLOYEE_ID, E.DEPARTMENT_ID, D.DEPARTMENT_NAME
 FROM EMPLOYEES E
-RIGHT JOIN DEPARTMENTS D
+right JOIN DEPARTMENTS D
 ON E.DEPARTMENT_ID = D.DEPARTMENT_ID
 WHERE E.DEPARTMENT_ID IS NULL
 ORDER BY 3;
@@ -247,7 +247,7 @@ order by 1;
 select e.first_name, e.last_name, e.manager_id, e.department_id, d.department_name, d.manager_id
 from employees e
 join departments d
-on e.manager_id = d.department_id
+on e.manager_id = d.department_id;
 order by 5;
 
 select d.department_name, e.first_name, e.last_name 
@@ -255,9 +255,7 @@ from departments d join employees e
 on d.manager_id = e.employee_id
 order by 1;
 
-select e.EMPLOYEE_ID,e.FIRST_NAME,
-e.LAST_NAME, d.department_id, 
-d.department_name, d.manager_id
+select e.EMPLOYEE_ID,e.FIRST_NAME,e.LAST_NAME, d.department_id, d.department_name, d.manager_id
 from departments d
 inner join employees e
 on e.DEPARTMENT_ID = d.DEPARTMENT_ID
@@ -274,4 +272,35 @@ id_myk not null unique
 nazwa varchar (23)
 
 
+	
+
 );
+
+select *
+from countries
+
+
+select* from number;
+
+select country_id 
+from countries 
+where rownum <= 6 and region_id = 1 ;
+
+SELECT * FROM countries
+WHERE Country_id = 'Argentyna' AND ROWNUM <= 3
+
+select *
+from employees;
+
+select
+count (salary) from employees;
+
+SELECT AVG(salary)
+FROM employees;
+
+SELECT SUM(salary)
+FROM employees;
+
+
+
+
