@@ -186,3 +186,85 @@ WHERE HIRE_DATE BETWEEN '04/11/04' AND '07/11/04';
 SELECT SUM(MAX_SALARY)
 FROM JOBS
 WHERE JOB_ID LIKE '%AD%';
+
+----wypisz nazwy krajów i nazwy regionów----------
+=-----------------------------------------------------------------
+SELECT C.COUNTRY_NAME, R.REGION_NAME
+FROM COUNTRIES C
+JOIN REGIONS R
+ON C.REGION_ID = R.REGION_ID
+ORDER BY 1;
+
+-----------------------------------------------------------------
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WW',1);
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WX',1);
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WV',1);
+
+-----------------------------------------------------------------
+SELECT C.COUNTRY_NAME, R.REGION_NAME
+FROM COUNTRIES C
+LEFT JOIN REGIONS R
+ON C.REGION_ID = R.REGION_ID
+ORDER BY COUNTRY_NAME;
+ ---------wszystkich pracowników nawet tych z department id null
+------------ employe id, department id, last name , first name, department name
+
+SELECT E.FIRST_NAME, E.LAST_NAME, E.EMPLOYEE_ID, E.DEPARTMENT_ID, D.DEPARTMENT_NAME
+FROM EMPLOYEES E
+LEFT JOIN DEPARTMENTS D
+ON E.DEPARTMENT_ID = D.DEPARTMENT_ID
+ORDER BY 3;
+
+------------------------------wszystkie nulle---------------------------------
+
+SELECT E.FIRST_NAME, E.LAST_NAME, E.EMPLOYEE_ID, E.DEPARTMENT_ID, D.DEPARTMENT_NAME
+FROM EMPLOYEES E
+FULL OUTER JOIN DEPARTMENTS D
+ON E.DEPARTMENT_ID = D.DEPARTMENT_ID
+WHERE E.DEPARTMENT_ID IS NULL OR D.DEPARTMENT_ID IS NULL
+ORDER BY 3;
+
+-----------------------------------------------------
+
+SELECT E.FIRST_NAME, E.LAST_NAME, E.EMPLOYEE_ID, E.DEPARTMENT_ID, D.DEPARTMENT_NAME
+FROM EMPLOYEES E
+LEFT JOIN DEPARTMENTS D
+ON E.DEPARTMENT_ID = D.DEPARTMENT_ID
+WHERE D.DEPARTMENT_ID IS NULL
+ORDER BY 3;
+
+------------------------
+
+
+SELECT E.FIRST_NAME, E.LAST_NAME, E.EMPLOYEE_ID, E.DEPARTMENT_ID, D.DEPARTMENT_NAME
+FROM EMPLOYEES E
+RIGHT JOIN DEPARTMENTS D
+ON E.DEPARTMENT_ID = D.DEPARTMENT_ID
+WHERE E.DEPARTMENT_ID IS NULL
+ORDER BY 3;
+
+-----------wszystkie deprtamenty ktore maja menedzera id i wyswietlenie imienia i nazwiska
+
+select d.department_name, e.first_name, e.last_name 
+from departments d join employees e
+on d.manager_id = e.employee_id
+order by 1;
+
+---------wszyscy pracownicy, ktorzy maja departament zarzadzany przez managera
+-----------imie, nazwisko, id i nazwa dep, id i imie nazwisko managera---
+
+select e.EMPLOYEE_ID,e.FIRST_NAME, e.LAST_NAME, d.department_id, d.department_name, d.manager_id
+from departments d
+inner join employees e
+on e.DEPARTMENT_ID = d.DEPARTMENT_ID
+where d.manager_id is not null;
+
+
+----------------having warunkowe grupowanie, najpierw grupujemy, zawsze po group by
+
+ALTER TABLE COUNTR1 (
+id_COUNTR1 int UNIQUE
+);

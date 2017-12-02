@@ -2,12 +2,92 @@ package laitJava;
 
 import java.util.Scanner;
 
+import com.sun.xml.internal.ws.encoding.soap.SOAP12Constants;
+
 public class RobertLajt {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.out.println("wproawadz liczbe");
+		 String mojazmienna = wczytywaniezKonsoli();
+		int zmiennaZKonsoli = Integer.parseInt(mojazmienna);
+		 for (int licznik =0 ;licznik<=zmiennaZKonsoli;licznik++ ) {
+			 if(licznik%2==0 ) {
+				 System.out.println("Liczba parzysta "+ licznik);
+			 }
+			 else {
+				 System.out.println("Liczba nie parzysta "+ licznik);
+			 }
+		 }
+		
+		for (int i = 0; i < 10; i++) {
+			
+			
+			if (i==6) {
+				break;
+			}
+			if (i==3) {
+				continue;
+			}
+			System.out.println(i);
+		}
 
 		// czwiczeniezWcytywania();
-cwieczeniezFarehaita();
+//cwieczeniezFarehaita();
+
+//int key= Integer.parseInt(wczytywaniezKonsoli());
+String key =wczytywaniezKonsoli();
+//switch (key) {
+//case "ala":
+//	System.out.println("Ala ma Kota");
+//	break;
+//case "pies":
+//	System.out.println("Pies ma Ale");
+//	break;
+//default:
+//	System.out.println("Nie ma Ali i nie Ma kota");
+//	break;
+//}
+//int i = 10;
+//System.out.println("teraz while");
+//while (i >0) {
+//	
+//	Thread.sleep(1000);
+//	System.out.println("bomba wybuchnie za"+i);
+//	i--;
+//}
+//System.out.println("teraz for");
+//for (int j = 10; j > 0; j--) {
+//	Thread.sleep(1000);
+//	System.out.println("bomba wybuchnie za"+j);	
+//}
+//int k=5;
+//System.out.println("teraz Do While");
+//do {
+//	Thread.sleep(1000);
+//	System.out.println("bomba wybuchnie za"+k);
+//	k--;
+//} while (k<0);
+
+		for (int j = 0; j < 10; j++) {
+			for (int j2 = 0; j2 < 10; j2++) {
+				for (int l = 0; l < 10; l++) {
+					Thread.sleep(1000);
+					System.out.println("obrot petli 1 =" + j);
+					System.out.println("obrot petli 2 =" +j2);
+					System.out.println("obrot petli 3 =" +l);
+					System.out.println();
+				}
+			}
+		}
+//Bomba wybuchnie za ...
+
+
+//Napisz program, który pobierze od u¿ytkownika imiê i przechowa je w zmiennej. 
+//Nastêpnie stwórz kilka warunków z ró¿nymi imionami. 
+//Jeœli któreœ z imion bêdzie pasowa³o wyœwietl "Czeœæ jakieœ_imiê", 
+//gdy program nie znajdzie imienia wyœwietl "Przykro mi, ale Ciê nie znam".
+
 	}
 
 	static void cwiczenie3Liczby(){
