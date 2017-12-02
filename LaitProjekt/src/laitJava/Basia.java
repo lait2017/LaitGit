@@ -15,7 +15,7 @@ public class Basia {
 		//Celsjusze na F; Fahrenheit = 1.8* stopnie Celsjusza+ 32.00
 		
 		double F;
-		System.out.println("Podaj temeperaturê w Celsjuszach");
+		System.out.println("Podaj temeperaturï¿½ w Celsjuszach");
 		String zkonsoli=wczytywaniezKonsoli();
 		int liczba;
 		Integer licz = 0;
@@ -55,7 +55,7 @@ public class Basia {
 		System.out.println(pierwszaInt - drugaInt);
 		System.out.println(pierwszaInt % drugaInt);
 
-		String ci¹giZnaków = "napis123";
+		String ciagiZnakow = "napis123";
 		char g = 'g';
 		double zmiennoPrzecinkowa = 3.0;
 		if (2 != 5) {
@@ -64,9 +64,9 @@ public class Basia {
 		}
 
 		if (pierwszaInt < 0) {
-			System.out.println("Mniejsze ni¿ 0");
+			System.out.println("Mniejsze niï¿½ 0");
 		} else {
-			System.out.println("wiêksze od 0");
+			System.out.println("wiï¿½ksze od 0");
 		}
 	}
 

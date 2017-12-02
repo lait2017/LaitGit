@@ -62,9 +62,9 @@ public class Ola {
 		String string = "napis 123";
 		char a = 'a';
 		double zmiennaPrzecinkowa = 3.0;
-		boolean prawdaFa³sz = false;
+		boolean prawdaFalsz = false;
 		
-		if (prawdaFa³sz) {
+		if (prawdaFalsz) {
 			System.out.println("jestem w ifie" + zmiennaInt);
 			zmiennaInt++;
 		}
@@ -86,7 +86,7 @@ public class Ola {
 
 		if (2 != 5) {
 			System.out.println("jestem w ifie" + zmiennaInt);
-			zmiennaInt++; // logiczna negacja, ró¿ne
+			zmiennaInt++; // logiczna negacja, rï¿½ne
 		
 			double d, b, c;
 			d = 5;
