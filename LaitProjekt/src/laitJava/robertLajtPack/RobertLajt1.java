@@ -8,7 +8,7 @@ public class RobertLajt1 {
 		System.out.println("wprowadz liczbe dodatnia");
 		String text;
 		Scanner odczyt = new Scanner(System.in);
-		double dub = Double.parseDouble(odczyt);
+		//double dub = Double.parseDouble(odczyt);
 		text = odczyt.nextLine();
 		int licznik = Integer.parseInt(text);
 		for (int i = 0; i <= licznik; i++) {
