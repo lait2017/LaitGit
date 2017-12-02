@@ -6,28 +6,102 @@ public class Basia {
 
 	public static void main(String[] args) {
 //cwiczeniazWczytywania();
-		cwiczeniezFarenheita();
-
+		//cwiczeniazInstrukcjami();
+		//cwiczeniezFarenheita();
+		for(int i=0; i<10; i++ ) {cwiczeniezFarenheita();
+		}
+	
+    int i=0;
+    while (i<10) 
+	{
+		System.out.println(i);
+	i++;
 	}
+	for(int j=0; j<10; j++) 
+	{
+	System.out.println(j);	
+	}
+	
+	i=0;
+	do 
+	{
+	System.out.println("teraz do while");
+	i++;
+	} while (i<10);
+	
+	
+	
+	//zadanie z pêtlami
+	System.out.println("na pocz¹tek pêtla for: ");
+	for(int k=10; k>0; k--) {
+		System.out.println("bomba wybuchnie za "+ k);
+	}
+	System.out.println("Nastêpnie pêtla do, while: ");
+	int l;
+	l=10;
+	do {
+		System.out.println("Bomba wybychnie za: " + l);
+		l--;}
+	while (l>0);
+	
+	System.out.println("I na koniec while: ");
+	int n=10;
+	while(n>0) {
+		System.out.println("Bomba wybuchnie za:" + n);
+		n--;
+	}
+
+	
+}	
+	
+	
+	static void cwiczeniazInstrukcjami() 
+	{
+	int liczba1; int liczba2; 
+	
+	Integer liczba= 0; 
+	System.out.println("Podaj pierwsz¹ liczbê:");
+	liczba1  = Integer.parseInt(wczytywaniezKonsoli());
+	System.out.println("Podaj drug¹ liczbê");
+	liczba2 = Integer.parseInt(wczytywaniezKonsoli());
+	
+
+	
+	if (liczba1>liczba2) 
+		{
+	 		System.out.println("Najwiêksza liczba to:"+  liczba1  );
+	 		System.out.println("najmniejsza liczba to:" + liczba2);
+		}
+	else
+		{
+		System.out.println("To jest najmniejsza liczba: " + liczba1);
+		System.out.println("Najwiêksza liczba to: "+ liczba2);
+		}
+	
+	}
+	
+	
+	
 	
 	static void cwiczeniezFarenheita() 
 	{
 		//Celsjusze na F; Fahrenheit = 1.8* stopnie Celsjusza+ 32.00
 		
 		double F;
+		
 		System.out.println("Podaj temeperaturê w Celsjuszach");
 		String zkonsoli=wczytywaniezKonsoli();
 		int liczba;
 		Integer licz = 0;
-		liczba  = licz.parseInt(zkonsoli);
+		liczba  = Integer.parseInt(zkonsoli);
 		F=(1.8*liczba)+32;
 		System.out.println("Temperatura po przeliczeniu: "+ F);
 		
+	
+		
+}
 		
 		
-		
-		
-	}
 
 	static String wczytywaniezKonsoli() {
 		String text;
@@ -55,7 +129,7 @@ public class Basia {
 		System.out.println(pierwszaInt - drugaInt);
 		System.out.println(pierwszaInt % drugaInt);
 
-		String ci¹giZnaków = "napis123";
+		String ciagiZnakow = "napis123";
 		char g = 'g';
 		double zmiennoPrzecinkowa = 3.0;
 		if (2 != 5) {
