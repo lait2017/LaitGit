@@ -4,18 +4,69 @@ import java.util.Scanner;
 
 public class grzesiek {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
 	        //  System.out.println(text + ((a+b)>c) );
 		 cwiczeniezFarenhaita();
+     //trzyliczby();
+int i = 10;
+while ( i >  0 ) {
+	System.out.println ("while " + i);
+	i--;
+}
      
+int j;
+for ( j=10 ; j > 0 ; j-- ) 
+{
+	System.out.println ("for"+j);
+}
+
+int k=10;
+do {
+	Thread.sleep(1000);
+	System.out.println ("do while "  +k);
+	k--;
+} while (k > 0) ;
+
       }
+	
+	static void trzyliczby() {
+		int licz1, licz2,licz3 , maxlicz=0;
+	    Integer licz;
+		
+		
+		System.out.println ( "Podaj pierwsza liczbe: ");
+		licz1 = Integer.parseInt(wczytywaniezKonsoli());
+		System.out.println ( "Podaj druga liczbe: ");
+		licz2 =Integer.parseInt(wczytywaniezKonsoli());
+		System.out.println ( "Podaj trzecia liczbe: ");
+		licz3 = Integer.parseInt(wczytywaniezKonsoli());
+		
+		if  ( licz1 >= licz2  &&  licz1 >= licz3 ) 
+		{
+			maxlicz =licz1;
+			}
+		if  ( licz2 >= licz1  &&  licz2 >= licz3 ) 
+		{ 
+			maxlicz =licz2;
+			}
+		if  ( licz3 >= licz1  &&  licz3 >= licz2 ) 
+		{ 
+			maxlicz =licz3;
+			}
+		System.out.println ( "Najwieksza liczba to: " +  maxlicz);
+		
+	}
+	
 	
 	static void cwiczeniezFarenhaita() {
 		
 		double F ;
-		
+		int ii;
+		for ( ii=1 ; ii < 11 ; ii++) {
+			System.out.println ( "to jest " + ii + "  uruchomienie fahre.....") ;
+			System.out.println (" =========================================" );
 		System.out.println ( "Podaj temperature z stopniach Celsjusza ");
 		int liczba;
 		String zkonsoli = wczytywaniezKonsoli();
@@ -25,7 +76,7 @@ public class grzesiek {
 		System.out.println ( "Temperatura w stopniach Fahrenhaita " + F);
 		
 		
-		
+		}
 	}
 	
      static String wczytywaniezKonsoli() {
