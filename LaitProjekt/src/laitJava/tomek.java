@@ -9,7 +9,7 @@ public class tomek {
 
 
 // cwiczeniezWczytywania();
-cwiczeniezFarenheita();
+cwiczenie3liczby();
 
 	}
 	
@@ -22,6 +22,21 @@ cwiczeniezFarenheita();
 		
 	}
 	
+	static void cwiczenie3liczby() {
+		String zkonsoli = wczytywaniezKonsoli();
+		int a;
+		Integer licz = 0;
+		a = licz.parseInt(zkonsoli);
+		String zkonsoli2 = wczytywaniezKonsoli();
+		int b;
+		Integer licz1 = 0;
+		b = licz1.parseInt(zkonsoli2);
+		if (a > b) {
+			System.out.println(+a +" to jest najwieksza liczba" );}
+			else {
+				System.out.println(+b +" to jest najwieksza liczba");
+		}
+	}
 
 	static String wczytywaniezKonsoli() {
 		String text;
