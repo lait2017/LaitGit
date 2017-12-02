@@ -1,4 +1,4 @@
-package laitJava;
+package GrzesiekPaczka;
 
 import java.util.Scanner;
 
