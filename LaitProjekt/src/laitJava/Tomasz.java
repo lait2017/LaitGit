@@ -124,8 +124,8 @@ System.out.print("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczba 
 	}
 
 
-private static String wczytywaniezKonsoli() {
-	// TODO Auto-generated method stub
-	return null;
-}
+//private static String wczytywaniezKonsoli() {
+//	// TODO Auto-generated method stub
+//	return null;
+//}
 }

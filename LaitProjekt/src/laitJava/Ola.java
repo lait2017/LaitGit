@@ -4,19 +4,50 @@ import java.util.Scanner;
 
 public class Ola {
 
+	private static char[] j;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int i = 2;
+		while (i < 10) {
+			System.out.println(i);
+			i++;
 
-	}
+		}
 
-	String text = wczytywaniezKonsoli();
-	{
-		System.out.println(text);
-		Integer liczbazKonsoli = 0;
-		text = wczytywaniezKonsoli();
-		int liczba = liczbazKonsoli.parseInt(text);
-		System.out.println(liczba + 5);
+		System.out.println("teraz for");
+		for (int j = 0; j < 10; j++)			
+		{
+			System.out.println(j);
 
+		}
+
+		i = 0;
+		do {
+
+			System.out.println("teraz do while");
+			i++;
+		} while (i < 10);
+
+		String text = wczytywaniezKonsoli();
+		{
+			System.out.println(text);
+			Integer liczbazKonsoli = 0;
+			text = wczytywaniezKonsoli();
+			int liczba = liczbazKonsoli.parseInt(text);
+			System.out.println(liczba + 5);
+
+		}
+
+		for (int i1 = 0; i1 < 10; i1++) {
+			System.out.println(" i = " + i1);
+
+		}
+		
+		for (int j = 0; j < 10; j++)			
+		{
+			cwiczeniezFarenhaita();
+		}
 	}
 
 	static void cwiczeniezFarenhaita() {
@@ -53,9 +84,9 @@ public class Ola {
 		String string = "napis 123";
 		char a = 'a';
 		double zmiennaPrzecinkowa = 3.0;
-		boolean prawdaFa³sz = false;
+		boolean prawdaFalsz = false;
 
-		if (prawdaFa³sz) {
+		if (prawdaFalsz) {
 			System.out.println("jestem w ifie" + zmiennaInt);
 			zmiennaInt++;
 		}
@@ -77,7 +108,7 @@ public class Ola {
 
 		if (2 != 5) {
 			System.out.println("jestem w ifie" + zmiennaInt);
-			zmiennaInt++; // logiczna negacja, ró¿ne
+			zmiennaInt++; // logiczna negacja, rï¿½ne
 
 			double d, b, c;
 			d = 5;
@@ -114,7 +145,7 @@ public class Ola {
 			largest = c;
 		}
 
-		System.out.println("Najwiêksza: " + largest);
+		System.out.println("Najwiï¿½ksza: " + largest);
 
 		if (a < b) {
 			smallest = a;
@@ -128,4 +159,5 @@ public class Ola {
 		}
 
 	}
+
 }
