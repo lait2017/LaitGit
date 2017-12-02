@@ -5,11 +5,52 @@ import java.util.Scanner;
 
 public class Jacek {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		//cwiczeniezFarenhaita();
-     liczenie2liczb();
+		cwiczeniezFarenhaita();
+		//liczenie2liczb();
+		
+/*		int i=0;
+		while (i<10) {
+			System.out.println(i);
+			i++;
+		}
+	
+		int i=0;
+		for (i=0;i<5;i++) {
+			System.out.println(i);
+		}
+
+		int i=0;
+		do {
+			System.out.println("do while");
+			i++;
+		} while (i<10);
+	
+		System.out.println("petla while");
+		int i=6;
+		while (i>=0) {
+			System.out.println(i);
+			i--;  //lub i=i-1;
+		}
+		
+		System.out.println("petla for");
+		int j=4;
+		for (j=4;j>=0;j--) {
+			System.out.println(j);
+		}
+
+		System.out.println("petla do while");
+		int k=3;
+		do {
+			System.out.println(k);
+			Thread.sleep(1000);
+			k--;
+		} while (k>=0);
+*/	
       }
+	
+
 	
 	static void liczenie2liczb() {
 		int liczba1, liczba2;
@@ -33,7 +74,21 @@ public class Jacek {
 	
 	static void cwiczeniezFarenhaita() {
 		
-		double F ;
+		int i=0;
+		double F;
+		do {
+			System.out.println ( "Podaj temperature z stopniach Celsjusza ");
+			int liczba;
+			String zkonsoli = wczytywaniezKonsoli();
+			Integer licz = 0; 
+			liczba = licz.parseInt(zkonsoli) ;
+			F = (1.8 * liczba) + 32 ;
+			System.out.println ( "Temperatura w stopniach Fahrenhaita " + F);
+			i++;
+		} while (i<5);
+		System.out.println("koniec pêtli");
+		
+/*		double F ;
 		
 		System.out.println ( "Podaj temperature z stopniach Celsjusza ");
 		int liczba;
@@ -43,7 +98,7 @@ public class Jacek {
 		F = (1.8 * liczba) + 32 ;
 		System.out.println ( "Temperatura w stopniach Fahrenhaita " + F);
 		
-		
+	*/	
 		
 	}
 	
