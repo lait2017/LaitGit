@@ -4,8 +4,16 @@ import java.util.Scanner;
 
 public class dominika {
 	public static void main(String[] args) throws InterruptedException {
+	
 		
-		
+	
+
+	}
+	
+	
+	
+	
+	
 //cwiczeniezFarenhaita();
 		//cwiczeniezFarenhaita();
 		 //cwiczeniedwieLiczby();
@@ -97,6 +105,10 @@ static void cwiczeniezWczytywania() {
 	System.out.println(liczba + 5 );
 	
 }
+
+}
+
+}
 	
 	void mojeMetodaZmienne  () {
 	
@@ -161,8 +173,9 @@ void cwiczeniecwiczenia() {
 
 }
 
+
 		
-}
+
 
 
 
