@@ -129,6 +129,73 @@ SELECT AVG(SALARY) AS SREDNIE_ZAROBKI FROM EMPLOYEES WHERE HIRE_DATE BETWEEN '04
 select SUM (max_salary) from jobs where job_id like 'AD%';
 
 
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WW',1);
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WX',1);
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WV',1);
+
+select c.country_name, r.region_name
+from countries c
+left joins regions r
+on c.region_id=
+
+
+SELECT E.Employee_Id, E.First_Name, E.Last_Name, D.Department_Id, D.Department_Name
+FROM Employees E
+Full JOIN Departments D ON E.EMPLOYEE_ID = D.Department_Id
+Order by Employee_ID;
+
+select e.first_name, e.last_name, d.department_name 
+from employees e left join departments d 
+on e.department_id = d.department_id
+order by 4;
+
+select e.manager_id, e.first_name, e.last_name from 
+employees e left join departments d on e.manager_id =e.first_name;
+
+select d.department_name, e.first_name, e.last_name 
+from departments d join employees e
+on d.manager_id = e.employee_id
+order by 1;
+
+select d.deparment_name, e.first_name, e.last_name
+from departments d join employees e on 
+d.DEPARTMENT_ID =e.manager_id;
+
+select d.department_name, e.first_name, e.last_name 
+from departments d join employees e
+on d.manager_id = e.employee_id
+order by 1;
+select e.EMPLOYEE_ID,e.FIRST_NAME,
+e.LAST_NAME, d.department_id, 
+d.department_name, d.manager_id
+from departments d
+inner join employees e
+on e.DEPARTMENT_ID = d.DEPARTMENT_ID
+where d.Department_ID IS NULL OR d.manager_id is not null; 
+
+
+CREATE TABLE regionsnew (region_id number, region_name varchar(2));
+insert into regionsnew select*from REGIONS;
+
+create table countries1 as select*from countries;
+
+alter table countries1 MODIFY
+(id_countries1 int) AUTO INCREMENT;
+insert into countries1 values('VV', 'RWANDA', 3, 6);
+
+select*from countries;
+select * from countries where region_id=3 or region_id=2;
+select * from countries where region_id in (2,3);
+
+select cou.COUNTRY_NAME, cou.COUNTRY_ID, reg.REGION_NAME
+from countries as cou
+inner join regions as reg
+on countries.REGION_ID=reg.REGION_ID;
+
+
 
 
 
