@@ -33,7 +33,7 @@ public class operacjaMatematyczne {
 		else 
 		{ 
 			System.out.println("To nie jest trojkat prostokatny");}
-		*/
+		
 		double aa,bb=0.0,cc=0.0;
 		System.out.println(" Podaj 3 liczby rownania ax+b =c: ");
 		aa = skaner.nextDouble();
@@ -71,6 +71,27 @@ public class operacjaMatematyczne {
 			System.out.println(" while :wartosc funkcji y=3x :" + (3*k));
 			k++;
 		}
+	*/
+		int e;
+		for (e=1;e<=20;e++)
+		{
+			System.out.println(" wyswietla liczby w przedziale (1-20) :" +e);
+		}
+		
+		int f=1;
+		do {
+			System.out.println("do -while  wyswietla liczby w przedziale (1-20) :" +f);	
+			f++;
+		}
+		while (f<=20);
+		
+		int g=1;
+		while (g<=20)
+		{
+			System.out.println("while -  wyswietla liczby w przedziale (1-20) :" +g);
+			g++;
+		}
+		
 	}
 
 }
