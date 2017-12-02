@@ -8,6 +8,8 @@ public class Basia {
 //cwiczeniazWczytywania();
 		//cwiczeniazInstrukcjami();
 		//cwiczeniezFarenheita();
+
+	
 		for(int i=0; i<10; i++ ) {cwiczeniezFarenheita();
 		}
 	
@@ -164,3 +166,4 @@ public class Basia {
 
 	}
 }
+
