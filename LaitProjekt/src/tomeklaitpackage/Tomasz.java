@@ -1,32 +1,76 @@
-package laitJava;
+package tomeklaitpackage;
 
 import java.util.Scanner;
 
 public class Tomasz {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
-		liczby31(); 
+/*		int i = 0;
+		while (i < 10) {
+			System.out.println(i);
+			i++;
+		}
+	for (int j = 10; j < 10; j++) { 
+		System.out.println(j);
+	}	
+	do {
+		System.out.println("teraz do while");
+	} 
+	while (i<10); 
+	*/
+		/*
+		int i = 10;
 		
+		 while (i > 0) {
+			 Thread.sleep(1000);
+		 System.out.println("Bomba wybuchnie za ... " + i);
+		 i--;	}
+		 System.out.println("BUM!!!!!");
+		 
+		 
+		 for (int k = 10; k > 0; k--) {
+			 Thread.sleep(1000);
+			 System.out.println("Bomba wybuchnie za ... " + k);
+			 }
+	
+			 
+		 System.out.println("BUM!!!!!"); */
+		
+		for (int i = 0; i < 4; i++) 
+		
+		
+		{
+			cwiczeniezFarehaita();
+			
+			
+	
+		}
+		 
 	}
+	
+	
+	
+		
+		
+	
 static void liczby31() {
 	String zkonsoli = wczytywaniezKonsoli();
-	int liczba;
-	Integer licz = 0;
 	String zkonsoli1 = wczytywaniezKonsoli();
+	String zkonsoli2 = wczytywaniezKonsoli();
+	int liczba;
+	int liczba1;
+	int liczba2;
+	Integer licz = 0;
 	Integer licz1 = 0;
-	int liczba1;	
+	Integer licz2 = 0;
 	liczba = licz.parseInt(zkonsoli);
 	liczba1 = licz1.parseInt(zkonsoli1);
-	if (liczba < liczba1) {
-System.out.println("Liczba " + liczba1 + " jest wiêksza ni¿ " + liczba);}
+	liczba2 = licz2.parseInt(zkonsoli2);
 	
-else {
-	System.out.println("Liczba " + liczba + " jest wiêksza ni¿ " + liczba1);
-	}
-		
-		}
-		
+	
+	
+}
 	
 
 	static void cwiczeniezFarehaita() {
@@ -34,7 +78,7 @@ String zkonsoli = wczytywaniezKonsoli();
 int liczba;
 Integer licz = 0;
 liczba = licz.parseInt(zkonsoli);
-System.out.print("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczba + 32.0));
+System.out.println("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczba + 32.0));
 
 	}
 
@@ -54,7 +98,7 @@ System.out.print("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczba 
 		System.out.println(liczba + 5);
 	}
 
-	// void tutaj jest po to, ¿e ta metoda nie bêdzie niczego zwracaæ
+	// void tutaj jest po to, ï¿½e ta metoda nie bï¿½dzie niczego zwracaï¿½
 	void mojaMetodaZmienne() {
 		// TODO Auto-generated method stub
 		int zmiennanr1 = 1;
@@ -124,8 +168,13 @@ System.out.print("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczba 
 	}
 
 
+<<<<<<< HEAD:LaitProjekt/src/laitJava/Tomasz.java
 //private static String wczytywaniezKonsoli() {
 //	// TODO Auto-generated method stub
 //	return null;
 //}
 }
+=======
+
+}
+>>>>>>> origin/Tomasz:LaitProjekt/src/tomeklaitpackage/Tomasz.java

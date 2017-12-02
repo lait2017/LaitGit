@@ -85,7 +85,11 @@ public class Ola {
 		char a = 'a';
 		double zmiennaPrzecinkowa = 3.0;
 		boolean prawdaFalsz = false;
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> origin/Tomasz
 		if (prawdaFalsz) {
 			System.out.println("jestem w ifie" + zmiennaInt);
 			zmiennaInt++;
@@ -109,7 +113,11 @@ public class Ola {
 		if (2 != 5) {
 			System.out.println("jestem w ifie" + zmiennaInt);
 			zmiennaInt++; // logiczna negacja, r�ne
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> origin/Tomasz
 			double d, b, c;
 			d = 5;
 			b = 10;
