@@ -71,7 +71,7 @@ public class operacjaMatematyczne {
 			System.out.println(" while :wartosc funkcji y=3x :" + (3*k));
 			k++;
 		}
-	*/
+	
 		int e;
 		for (e=1;e<=20;e++)
 		{
@@ -91,7 +91,16 @@ public class operacjaMatematyczne {
 			System.out.println("while -  wyswietla liczby w przedziale (1-20) :" +g);
 			g++;
 		}
-		
+		*/
+		int h,suma=0;
+		for (h=1;h<=100;h++)
+		{
+			
+			if ( !(h%2==0) )
+			suma=suma+h;	
+			//System.out.println(" suma 1-100 :" +suma);
+		}
+		System.out.println(" suma nieparzystych 1-100 :" +suma);
 	}
 
 }
