@@ -6,15 +6,94 @@ public class Monika {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		String text = wczytywaniezKonsoli();
-		System.out.println(text);
-		Integer liczbazKonsoli=0;
-		text =wczytywaniezKonsoli();
-		int liczba= liczbazKonsoli.parseInt(text);
-		System.out.println(liczba+5);
+		
+		//cwiczenie3Liczby();
+		//cwiczeniezFarenheita();
+		//wczytywaniezKonsoli();
+		
+//		int k=10;			
+//	for (k = 10; k >= 0; k--) {
+// System.out.println("odliczanie..." + k);
+		
+//		}
 	
-
+	
+	int m=10;
+	System.out.println("odliczanie" + m);
+			while (k<0) {
+					m++;
+			}		
+	
+	//	int i=0;
+	//	System.out.println("teraz while");
+	//			while (i<10) {
+	//				System.out.println(i);
+	//				i++;
+//								}
+//				System.out.println("teraz for");			
+//			for (int j = 10; j < 10; j++) {
+//					System.out.println(j);
+//				}
+	//i=0;
+//	do {
+//		System.out.println("teraz do while");
+//		i++;
+//	} while (i<10);
+				
+				
+	int key=Integer.parseInt(wczytywaniezKonsoli());
+	
+	switch (key) {
+	case 1:
+		System.out.println("to jest opcja 1");
+		break;
+		
+	case 2:
+		System.out.println("to jest opcja 2");
+		break;
+	case 3:
+		System.out.println("to jest opcja 3");
+		break;
+	case 4:
+		System.out.println("to jest opcja 4");
+		break;
+	default:
+		System.out.println("to jest opcja default");
+		break;
+	}
+	}
+	
+static void cwiczenie3Liczby(){
+		
+		int a = Integer.parseInt(wczytywaniezKonsoli());
+		int b = Integer.parseInt(wczytywaniezKonsoli());
+		int c = Integer.parseInt(wczytywaniezKonsoli());
+		int largest;
+		int smallest;
+		if (a > b) { 
+			largest = a;
+		} else {
+			largest = b;
+		}
+ 
+		if (c > largest) { 
+			largest = c;
+		}
+ 
+		System.out.println("Najwieksza: " + largest);
+ 
+		if (a < b) {
+			smallest = a;
+		} else {
+			smallest = b;
+		}
+ 
+		if (c < smallest) {
+			smallest = c;
+		}
+		System.out.println("Najmniejsza: " + smallest);
+		
+		
 	}
 	
 	static String wczytywaniezKonsoli() {
