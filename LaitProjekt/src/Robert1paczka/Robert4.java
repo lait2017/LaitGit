@@ -21,7 +21,7 @@ public class Robert4 {
 		    System.out.println("Podaj liczbe c");
 		    int c = xd.nextInt();
 		    
-		    if (a==0 || b==0 || c==0) {
+		    if (a==0) {
 		    	System.out.println("Error");
 			} else {
 				System.out.println("x w naszym przypadku wynosi " + ((c-b)/a));
