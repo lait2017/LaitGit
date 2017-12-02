@@ -3,15 +3,65 @@ package laitJava;
 import java.util.Scanner;
 
 public class tomek {
+	{
 
-	public static void main(String[] args) {
+//	public static void main(String[] args) throws InterruptedException {
 	
 
 
 // cwiczeniezWczytywania();
-cwiczenie3liczby();
+//cwiczenie3liczby();
 
-	}
+//int key = Integer.parseInt(wczytywaniezKonsoli());
+//switch (key) {
+//case 1:
+	//System.out.println("to jest opcja 1");
+	//break;
+//case 2:
+	//System.out.println("to jest opcja 2");
+	//break;
+//default:
+	//System.out.println("to jest opcja default");
+	//break;
+	
+//}
+
+// int i=10;
+ //while (i > 0) {
+//System.out.println("bomba wybuchnie za " +i);
+//	i--;
+ 
+ 
+ for (int b = 0; b < 10; b++) {
+	 cwiczeniezFarenheita();
+ 
+ }
+ 
+	
+//System.out.println("teraz for");
+	//for (int j=10; j > 0; j--) {
+	//	Thread.sleep(1000);
+	//	System.out.println("bomba wybuchnie za" +j);
+//	}
+	
+}
+
+//int i = 0;
+//while (i<8) {
+	//System.out.println(i);
+	//i++;
+//}
+
+//System.out.println("teraz for");
+//for (int j = 0; j<10; j++) {
+	//System.out.println(j);
+
+//i = 0;
+//do {
+	//System.out.println("teraz do while");
+//} while ( i <10 ) ;
+
+	//}
 	
 	static void cwiczeniezFarenheita() {
 		String zkonsoli= wczytywaniezKonsoli();
@@ -112,4 +162,22 @@ cwiczenie3liczby();
 		System.out.println(a==b);
 
 	}
+	
+	
+public static void main(String[]args) {
+	System.out.println("wprowadz liczbe dodatnia");
+ String text;
+ Scanner odczyt = new Scanner(System.in);
+ text = odczyt.nextLine();
+ int licznik = Integer.parseInt(text);
+ 
+ for (int i=0; i<= licznik; i++) {
+	 if(i % 2 == 0) {
+		 System.out.println("ta liczba jest parzysta " + i);
+	 }
+	 else {
+         System.out.println("ta liczba jest nie parzysta " + i);
+	 }
+	 }
+}
 }
