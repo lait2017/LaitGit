@@ -1,5 +1,5 @@
 
-package laitJava;
+package Jacekpaczka;
 
 import java.util.Scanner;
 
