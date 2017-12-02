@@ -17,8 +17,13 @@ public class Monika {
 		
 //		}
 	
+<<<<<<< HEAD
 	int k=0;
 	int m=10;
+=======
+	
+	int k=0,m=10;
+>>>>>>> remotes/origin/grzesiek
 	System.out.println("odliczanie" + m);
 			while (k<0) {
 					m++;
