@@ -80,3 +80,33 @@ select round(avg(salary),2) from EMPLOYEEs where hire_date between '04/11/04' an
 
 select sum(max_salary) from jobs where job_title like 'Adm%';
  
+ select a.country_name , b.region_name from countries a
+ join regions b on a.region_id = b.region_id;
+ 
+ insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WW',1);
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WX',1);
+insert into COUNTRIES (COUNTRY_ID, REGION_ID)
+values ('WV',1);
+
+ select a.country_name , b.region_name from countries a
+ left join regions b on a.region_id = b.region_id;
+ 
+ SELECT E.Employee_Id, E.First_Name, E.Last_Name, D.Department_Id, D.Department_Name
+FROM Employees E
+left JOIN Departments D ON E.EMPLOYEE_ID = D.Department_Id
+Order by Employee_ID;
+
+ SELECT E.manager_id, E.First_Name, E.Last_Name, D.Department_Id, D.Department_Name
+FROM Employees E
+full JOIN Departments D ON E.manager_ID = D.manager_Id ;
+
+select * into regions_kopia from REGIONS;
+
+create table regions22 (
+region_id  number,  
+region_name varchar(2) );
+
+
+insert into regions22 select * from regions22;
