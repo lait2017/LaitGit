@@ -11,7 +11,7 @@ public class Monika {
 		//cwiczeniezFarenheita();
 		//wczytywaniezKonsoli();
 		
-//		int k=10;			
+		int k=10;
 //	for (k = 10; k >= 0; k--) {
 // System.out.println("odliczanie..." + k);
 		
