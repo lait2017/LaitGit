@@ -1,4 +1,4 @@
-package laitJava;
+package laitJava.robertLajtPack;
 
 import java.util.Scanner;
 
