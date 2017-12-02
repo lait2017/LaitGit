@@ -1,4 +1,4 @@
-package laitJava;
+package laitJava.basiaPaczka;
 
 import java.util.Scanner;
 
@@ -33,12 +33,12 @@ public class Basia {
 	
 	
 	
-	//zadanie z pêtlami
-	System.out.println("na pocz¹tek pêtla for: ");
+	//zadanie z pï¿½tlami
+	System.out.println("na poczï¿½tek pï¿½tla for: ");
 	for(int k=10; k>0; k--) {
 		System.out.println("bomba wybuchnie za "+ k);
 	}
-	System.out.println("Nastêpnie pêtla do, while: ");
+	System.out.println("Nastï¿½pnie pï¿½tla do, while: ");
 	int l;
 	l=10;
 	do {
@@ -62,22 +62,22 @@ public class Basia {
 	int liczba1; int liczba2; 
 	
 	Integer liczba= 0; 
-	System.out.println("Podaj pierwsz¹ liczbê:");
+	System.out.println("Podaj pierwszï¿½ liczbï¿½:");
 	liczba1  = Integer.parseInt(wczytywaniezKonsoli());
-	System.out.println("Podaj drug¹ liczbê");
+	System.out.println("Podaj drugï¿½ liczbï¿½");
 	liczba2 = Integer.parseInt(wczytywaniezKonsoli());
 	
 
 	
 	if (liczba1>liczba2) 
 		{
-	 		System.out.println("Najwiêksza liczba to:"+  liczba1  );
+	 		System.out.println("Najwiï¿½ksza liczba to:"+  liczba1  );
 	 		System.out.println("najmniejsza liczba to:" + liczba2);
 		}
 	else
 		{
 		System.out.println("To jest najmniejsza liczba: " + liczba1);
-		System.out.println("Najwiêksza liczba to: "+ liczba2);
+		System.out.println("Najwiï¿½ksza liczba to: "+ liczba2);
 		}
 	
 	}
@@ -91,7 +91,7 @@ public class Basia {
 		
 		double F;
 		
-		System.out.println("Podaj temeperaturê w Celsjuszach");
+		System.out.println("Podaj temeperaturï¿½ w Celsjuszach");
 		String zkonsoli=wczytywaniezKonsoli();
 		int liczba;
 		Integer licz = 0;
@@ -131,7 +131,7 @@ public class Basia {
 		System.out.println(pierwszaInt - drugaInt);
 		System.out.println(pierwszaInt % drugaInt);
 
-		String ci¹giZnaków = "napis123";
+		String ciagiZnakow = "napis123";
 		char g = 'g';
 		double zmiennoPrzecinkowa = 3.0;
 		if (2 != 5) {
@@ -140,9 +140,9 @@ public class Basia {
 		}
 
 		if (pierwszaInt < 0) {
-			System.out.println("Mniejsze ni¿ 0");
+			System.out.println("Mniejsze niï¿½ 0");
 		} else {
-			System.out.println("wiêksze od 0");
+			System.out.println("wiï¿½ksze od 0");
 		}
 	}
 

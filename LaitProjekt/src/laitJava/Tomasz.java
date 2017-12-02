@@ -36,7 +36,7 @@ System.out.print("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczba 
 		System.out.println(liczba + 5);
 	}
 
-	// void tutaj jest po to, ¿e ta metoda nie bêdzie niczego zwracaæ
+	// void tutaj jest po to, ï¿½e ta metoda nie bï¿½dzie niczego zwracaï¿½
 	void mojaMetodaZmienne() {
 		// TODO Auto-generated method stub
 		int zmiennanr1 = 1;
@@ -51,9 +51,9 @@ System.out.print("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczba 
 		String string = "napis1";
 		char z = 'z';
 		double zmiennoprzecinkowa = 3.0;
-		boolean prawdaFa³sz = false;
+		boolean prawdaFalsz = false;
 
-		if (prawdaFa³sz) {
+		if (prawdaFalsz) {
 			System.out.println("jestem w ifie" + zmiennanr1);
 			zmiennanr1++;
 		}
