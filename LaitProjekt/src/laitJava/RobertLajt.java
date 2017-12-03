@@ -6,8 +6,10 @@ import com.sun.xml.internal.ws.encoding.soap.SOAP12Constants;
 
 public class RobertLajt {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {		
+		 
 		
+		//RobertLajt1.naszString = "nowa wartosc";
 		System.out.println("wproawadz liczbe");
 		 String mojazmienna = wczytywaniezKonsoli();
 		int zmiennaZKonsoli = Integer.parseInt(mojazmienna);

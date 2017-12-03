@@ -8,7 +8,7 @@ public class dominika {
 		
 	
 
-	}
+	
 	
 	
 	
@@ -106,9 +106,9 @@ static void cwiczeniezWczytywania() {
 	
 }
 
-}
 
-}
+
+
 	
 	void mojeMetodaZmienne  () {
 	
@@ -171,6 +171,7 @@ void cwiczeniecwiczenia() {
 	System.out.println((a + b)>c);
 	System.out.println(a==b);
 
+}
 }
 
 

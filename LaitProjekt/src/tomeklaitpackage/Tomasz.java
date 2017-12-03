@@ -168,13 +168,13 @@ System.out.println("Stopnie Celcjusza przeliczone na Farenhaita " + (1.8 * liczb
 	}
 
 
-<<<<<<< HEAD:LaitProjekt/src/laitJava/Tomasz.java
+
 //private static String wczytywaniezKonsoli() {
 //	// TODO Auto-generated method stub
 //	return null;
 //}
 }
-=======
 
-}
->>>>>>> origin/Tomasz:LaitProjekt/src/tomeklaitpackage/Tomasz.java
+
+
+

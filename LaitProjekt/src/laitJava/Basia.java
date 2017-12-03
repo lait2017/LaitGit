@@ -88,12 +88,12 @@ public class Basia {
 		//Celsjusze na F; Fahrenheit = 1.8* stopnie Celsjusza+ 32.00
 		
 		double F;
-<<<<<<< HEAD
+
 		
 		System.out.println("Podaj temeperaturê w Celsjuszach");
-=======
+
 		System.out.println("Podaj temeperaturï¿½ w Celsjuszach");
->>>>>>> origin/Tomasz
+
 		String zkonsoli=wczytywaniezKonsoli();
 		int liczba;
 		Integer licz = 0;
