@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: PierwszyTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.088 sec <<< FAILURE! - in PierwszyTest
+allegroWyszukiwarkaTest  Time elapsed: 7.561 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Tekst w impucie sie nie zgadza expected:<[tset]> but was:<[]>
+	at PierwszyTest.allegroWyszukiwarkaTest(PierwszyTest.java:57)
+
