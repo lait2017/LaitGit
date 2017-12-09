@@ -3,18 +3,16 @@ package laitJava;
 import java.util.Random;
 import java.util.Scanner;
 
-public class RobertLajt1 {
+public class GlobalnaTablica {
 
-	static int tabInt[] = new int[50];
+	 int  tabInt[] = new int[50];
 
-	public static void main(String[] args) {
-wypelnijTabliceLosowymiLiczbami();
-wyswietlZawartoscTablicy();
-wyswietlMiniMaxZtablicy();
-obliczSredniaArytmetycznaElementow();
-	}
+	 public GlobalnaTablica() {
+		wypelnijTabliceLosowymiLiczbami(); 
+	 }
+	 
 
-	static void wypelnijTabliceLosowymiLiczbami() {
+	 void wypelnijTabliceLosowymiLiczbami() {
 		int liczbaRand;
 		Random r = new Random();
 		liczbaRand = (r.nextInt(50));
@@ -25,8 +23,11 @@ obliczSredniaArytmetycznaElementow();
 		}
 		System.out.println("Wype³niam tablice losowymi liczbami");
 	}
-
-	static void wyswietlZawartoscTablicy() {
+/**
+ * Metoda do wyswietlania zawartosci globalenejtablicy.
+ * 
+ */
+	void wyswietlZawartoscTablicy() {
 
 		System.out.println("Zawartoœæ tablicy to:");
 		for (int i : tabInt) {
@@ -34,7 +35,7 @@ obliczSredniaArytmetycznaElementow();
 		}
 	}
 
-	static void wyswietlMiniMaxZtablicy() {
+	public void wyswietlMiniMaxZtablicy() {
 
 		int max = 0, min = 500;
 		for (int i = 0; i < 50; i++) {
@@ -50,7 +51,7 @@ obliczSredniaArytmetycznaElementow();
 
 	}
 
-	static void obliczSredniaArytmetycznaElementow() {
+	public void obliczSredniaArytmetycznaElementow() {
 		System.out.println("ForEach");
 		int suma = 0;
 		for (int i : tabInt) {
@@ -61,7 +62,7 @@ obliczSredniaArytmetycznaElementow();
 
 	}
 
-	static void minmax() {
+	public void minmax() {
 		System.out.println("wprowadz liczbe dodatnia");
 		String text;
 		Scanner odczyt = new Scanner(System.in);
