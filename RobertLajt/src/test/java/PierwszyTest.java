@@ -18,7 +18,7 @@ import static org.junit.Assert.assertTrue;
 
 public class PierwszyTest {
 
-    static WebDriver  driver;
+ //  static WebDriver  driver;
 
     @BeforeClass public static void beforeClass(){
         ChromeDriverManager.getInstance().setup();
@@ -26,22 +26,22 @@ public class PierwszyTest {
     }
 
     @Before public void beforeTest(){
-        driver = new ChromeDriver();
-        driver.get("http://allegro.pl");
+      //  driver = new ChromeDriver();
+        WebDriverSetup.driver.get("http://allegro.pl");
     }
     @After
     public void afterTest(){
-    driver.close();
+    WebDriverSetup.driver.close();
     }
     @Test
     public void firstTest() {
 
-WebElement raty0procent = driver.findElement(By.linkText("Teraz na Allegro Raty 0%"));
+WebElement raty0procent = WebDriverSetup.driver.findElement(By.linkText("Teraz na Allegro Raty 0%"));
         assertTrue("raty 0 procent jest nie widoczne",raty0procent.isEnabled());
         assertTrue("brakuje textu Allegro Raty",raty0procent.getText().contains("Allegro Raty"));
         raty0procent.click();
 
-       List<WebElement> kategorieRat = driver.findElements(By.className("contentArticle__tileItem"));
+       List<WebElement> kategorieRat = WebDriverSetup.driver.findElements(By.className("contentArticle__tileItem"));
        WebElement sportiWypoczynek = kategorieRat.get(3);
 
         assertTrue("brakuje textu Sport i Wypoczynek",sportiWypoczynek.getText().contains("Sport i wypoczynek"));
@@ -52,7 +52,7 @@ sportiWypoczynek.click();
     }
 
     @Test public void allegroWyszukiwarkaTest(){
-        WebElement wysukiwarka = driver.findElement(By.xpath("//input[contains(@type, 'search')]"));
+        WebElement wysukiwarka = WebDriverSetup.driver.findElement(By.xpath("//input[contains(@type, 'search')]"));
         wysukiwarka.sendKeys("Piłka");
         wysukiwarka.sendKeys(Keys.RETURN);
         assertEquals("Pole wyszukiwarki nie zawiera","Piłka",wysukiwarka.getAttribute("value").toString());

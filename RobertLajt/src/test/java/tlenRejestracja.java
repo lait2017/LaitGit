@@ -1,60 +1,75 @@
-import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
-
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class tlenRejestracja {
+    private TlenRegisterPage tlenRegisterPage;
+public tlenRejestracja(){
+    tlenRegisterPage = new TlenRegisterPage();
 
-
-
-    static WebDriver driver;
-
+}
     @BeforeClass
     public static void beforeClass() {
-        ChromeDriverManager.getInstance().setup();
+        //ChromeDriverManager.getInstance().setup();
 
     }
 
     @Before
     public void beforeTest() {
-        driver = new ChromeDriver();
-        driver.get("https://profil.tlen.pl/rejestracja/");
+    TlenRegisterPage.openUrl("https://profil.tlen.pl/rejestracja/");
+        //driver = new ChromeDriver();
+       //WebDriverSetup.driver.get("https://profil.tlen.pl/rejestracja/");
     }
 
     @After
     public void afterTest() {
-        driver.close();
+      //  driver.close();
     }
 
-    @Test
+   @Test
     public void
     sprawdzeniePolaImie() {
 
-        WebElement imieLabel = driver.findElement(By.xpath("//label[contains(@for, 'firstName')]"));
-        WebElement imieInput = driver.findElement(By.id("firstName"));
+      //  WebElement imieLabel = driver.findElement(By.xpath("//label[contains(@for, 'firstName')]"));
+     //   WebElement imieInput = driver.findElement(By.id("firstName"));
 
-      List <WebElement> imieError = driver.findElements(By.xpath("//label[contains(@for," +
-                " 'firstName')]/../div/ul"));
-
-
-    assertEquals("Labelka Imie ","Imię",imieLabel.getText());
-    assertTrue("imie Input jest nie puste",imieInput.getAttribute("value").isEmpty());
-    assertTrue("Error label shoud be not visibe",imieError.isEmpty());
-
-    imieInput.sendKeys("Test");
-        assertTrue("imie Input jest nie puste",imieInput.getAttribute("value").contains("Test"));
-
-    }
-
+     // List <WebElement> imieError = driver.findElements(By.xpath("//label[contains(@for," +
+//                " 'firstName')]/../div/ul"));
+//
+//
+   assertEquals("Labelka Imie ","Imię", tlenRegisterPage.getImieLabel().getText());
+//    assertTrue("imie Input jest nie puste",imieInput.getAttribute("value").isEmpty());
+//    assertTrue("Error label shoud be not visibe",imieError.isEmpty());
+//    imieInput.sendKeys("Test");
+//        assertTrue("imie Input jest nie puste",imieInput.getAttribute("value").contains("Test"));
+//        imieInput.clear();
+//        imieLabel.click();
+//        imieError = driver.findElements(By.xpath("//label[contains(@for," +
+//                " 'firstName')]/../div/ul"));
+//        assertEquals("Labelka Error ",
+//                "Proszę wpisać poprawne imię.",imieError.get(0).getText());
+//    }
+//@Test public void manOrWomancheckbox(){
+//    WebElement womanRadioButton = driver.findElement(By.xpath("//input[contains(@id, 'female')]"));
+//    WebElement womanLabel = driver.findElement(By.xpath("//input[contains(@id, 'female')]/.."));
+//    WebElement manRadioButton = driver.findElement(By.xpath("//input[contains(@id, 'male')]"));
+//    WebElement manLabel = driver.findElement(By.xpath("//input[contains(@id, 'male')]/.."));
+//
+//    assertFalse("radio button Woman shoud not be seleted",womanRadioButton.isSelected());
+//womanLabel.click();
+//    assertTrue("radio button Woman is not selected",womanRadioButton.isSelected());
+//    assertEquals("label shoud contains Kobieta text ",
+//            "Kobieta",womanLabel.getText());
+//
+//    assertFalse("radio button Man shoud not be seleted",manRadioButton.isSelected());
+//    womanLabel.click();
+//    assertTrue("radio button Mężczyzna is not selected",manRadioButton.isSelected());
+//    assertEquals("label shoud contains Mężczyzna text ",
+//            "Mężczyzna",manLabel.getText());
+}
 }
