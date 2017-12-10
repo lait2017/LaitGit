@@ -8,7 +8,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class tlenRejestracja {
+
     private TlenRegisterPage tlenRegisterPage;
+
 public tlenRejestracja(){
     tlenRegisterPage = new TlenRegisterPage();
 
@@ -35,41 +37,29 @@ public tlenRejestracja(){
     public void
     sprawdzeniePolaImie() {
 
-      //  WebElement imieLabel = driver.findElement(By.xpath("//label[contains(@for, 'firstName')]"));
-     //   WebElement imieInput = driver.findElement(By.id("firstName"));
-
-     // List <WebElement> imieError = driver.findElements(By.xpath("//label[contains(@for," +
-//                " 'firstName')]/../div/ul"));
-//
-//
    assertEquals("Labelka Imie ","Imię", tlenRegisterPage.getImieLabel().getText());
-//    assertTrue("imie Input jest nie puste",imieInput.getAttribute("value").isEmpty());
-//    assertTrue("Error label shoud be not visibe",imieError.isEmpty());
-//    imieInput.sendKeys("Test");
-//        assertTrue("imie Input jest nie puste",imieInput.getAttribute("value").contains("Test"));
-//        imieInput.clear();
-//        imieLabel.click();
-//        imieError = driver.findElements(By.xpath("//label[contains(@for," +
-//                " 'firstName')]/../div/ul"));
-//        assertEquals("Labelka Error ",
-//                "Proszę wpisać poprawne imię.",imieError.get(0).getText());
-//    }
-//@Test public void manOrWomancheckbox(){
-//    WebElement womanRadioButton = driver.findElement(By.xpath("//input[contains(@id, 'female')]"));
-//    WebElement womanLabel = driver.findElement(By.xpath("//input[contains(@id, 'female')]/.."));
-//    WebElement manRadioButton = driver.findElement(By.xpath("//input[contains(@id, 'male')]"));
-//    WebElement manLabel = driver.findElement(By.xpath("//input[contains(@id, 'male')]/.."));
-//
-//    assertFalse("radio button Woman shoud not be seleted",womanRadioButton.isSelected());
-//womanLabel.click();
-//    assertTrue("radio button Woman is not selected",womanRadioButton.isSelected());
-//    assertEquals("label shoud contains Kobieta text ",
-//            "Kobieta",womanLabel.getText());
-//
-//    assertFalse("radio button Man shoud not be seleted",manRadioButton.isSelected());
-//    womanLabel.click();
-//    assertTrue("radio button Mężczyzna is not selected",manRadioButton.isSelected());
-//    assertEquals("label shoud contains Mężczyzna text ",
-//            "Mężczyzna",manLabel.getText());
+    assertTrue("imie Input jest nie puste",tlenRegisterPage.getImieInput().getAttribute("value").isEmpty());
+    assertTrue("Error label shoud be not visibe",tlenRegisterPage.getImieErrorsList().isEmpty());
+       tlenRegisterPage.getImieInput().sendKeys("Test");
+        assertTrue("imie Input jest nie puste",tlenRegisterPage.getImieInput().getAttribute("value").contains("Test"));
+       tlenRegisterPage.getImieInput().clear();
+       tlenRegisterPage.getImieLabel().click();
+        assertEquals("Labelka Error ",
+                "Proszę wpisać poprawne imię.",tlenRegisterPage.getImieErrorsList().get(0).getText());
+    }
+@Test public void manOrWomancheckbox(){
+
+
+    assertFalse("radio button Woman shoud not be seleted",tlenRegisterPage.getWomanRadioButton().isSelected());
+    tlenRegisterPage.getWomanLabel().click();
+    assertTrue("radio button Woman is not selected",tlenRegisterPage.getWomanRadioButton().isSelected());
+    assertEquals("label shoud contains Kobieta text ",
+            "Kobieta",tlenRegisterPage.getWomanLabel().getText());
+
+    assertFalse("radio button Man shoud not be seleted",tlenRegisterPage.getManRadioButton().isSelected());
+    tlenRegisterPage.getWomanLabel().click();
+    assertFalse("radio button Mężczyzna is not selected",tlenRegisterPage.getManRadioButton().isSelected());
+    assertEquals("label shoud contains Mężczyzna text ",
+            "Mężczyzna",tlenRegisterPage.getManLabel().getText());
 }
 }
